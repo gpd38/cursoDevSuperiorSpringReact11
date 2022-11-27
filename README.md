@@ -1,8 +1,17 @@
+<p align="center">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gpd38/cursoDevSuperiorSpringReact11?color=blue">
+  <img alt="GitHub" src="https://img.shields.io/github/license/gpd38/cursoDevSuperiorSpringReact11?color=red">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gpd38/cursoDevSuperiorSpringReact11">
+  <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gpd38/cursoDevSuperiorSpringReact11?color=orange">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gpd38/cursoDevSuperiorSpringReact11?color=pink">
+</p>
+
 # Curso Dev Superior Spring React 11
 
-Criar um aplicativo que realiza pesquisas n
+Criar um aplicativo que realiza pesquisas em um banco H2 que contém vendas.
 
 ## Objetivos do projeto
+
 - Criar projetos backend e frontend
 - Salvar os projeto no Github em monorepo
 - Montar o visual estático do front end
@@ -29,7 +38,7 @@ https://www.figma.com/file/PehiT8Dw4Lv5ioTSULZeRI/DSMeta3
 
 ## Frontend
 
-## Passo: criar projeto ReactJS
+### Passo: criar projeto ReactJS
 
 ![DevSuperior no Instagram](https://raw.githubusercontent.com/devsuperior/bds-assets/main/sds/pastas-dsmeta.png)
 
@@ -37,7 +46,7 @@ https://www.figma.com/file/PehiT8Dw4Lv5ioTSULZeRI/DSMeta3
 yarn create vite frontend --template react-ts
 ```
 
-## Passo: criar projeto Spring Boot
+### Passo: criar projeto Spring Boot
 
 - Criar projeto Spring Boot no `Spring Initializr` com as seguintes dependências:
   - Web
@@ -57,7 +66,7 @@ yarn create vite frontend --template react-ts
 
 - Botão direito no projeto -> Maven -> Update project (force update)
 
-## Passo: salvar primeira versão no Github
+### Passo: salvar primeira versão no Github
 
 ```bash
 git init
@@ -73,26 +82,25 @@ git remote add origin git@github.com:seuusuario/seurepositorio.git
 git push -u origin main
 ```
 
-## Passo: "limpar" o projeto ReactJS
+### Passo: "limpar" o projeto ReactJS
 
 Vamos pegar o CSS que fizemos nas aulas de preparação:
 
 https://github.com/acenelio/dsmeta-css
 
-
 - **COMMIT: Project clean**
 
-## Passo: Primeiro componente
+### Passo: Primeiro componente
 
 Projeto HTML/CSS: https://github.com/acenelio/dsmeta-css
 
 - **COMMIT: First component**
 
-## Passo: Outros componentes
+### Passo: Outros componentes
 
 - **COMMIT: Other components**
 
-## Passo: Datepicker
+### Passo: Datepicker
 
 Documentação: https://github.com/Hacker0x01/react-datepicker
 
@@ -116,7 +124,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 - **COMMIT: Datepicker**
 
-## Passo: React Hook useState para manter estado das datas
+### Passo: React Hook useState para manter estado das datas
 
 Macete para criar uma data de X dias atrás:
 
@@ -128,7 +136,7 @@ const date = new Date(new Date().setDate(new Date().getDate() - 365));
 
 ## Backend
 
-## Passo: configuração de segurança
+### Passo: configuração de segurança
 
 ```java
 import java.util.Arrays;
@@ -178,6 +186,7 @@ public class SecurityConfig {
 - Fazer seed do banco de dados
 
 #### application.properties
+
 ```
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.username=sa
@@ -191,6 +200,7 @@ spring.jpa.properties.hibernate.format_sql=true
 ```
 
 #### import.sql
+
 ```sql
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Barry Allen',121,67,18196.0,'2022-06-16');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Logan',26,14,4255.0,'2022-06-14');
@@ -332,7 +342,6 @@ Page<Sale> findSales(LocalDate min, LocalDate max, Pageable pageable);
 
 - **COMMIT: Date select**
 
-
 ### Passo: Envio de SMS
 
 Dependências Maven do Twilio
@@ -385,7 +394,6 @@ public class SmsService {
 
 - **COMMIT: Twilio SMS**
 
-
 ### Passo: Implantação no Heroku
 
 Arquivo `system.properties`
@@ -407,3 +415,24 @@ heroku git:remote -a <nome-do-app>
 git remote -v
 git subtree push --prefix backend heroku main
 ```
+
+## Tela do sistema
+
+![Sistema](https://raw.githubusercontent.com/cursoDevSuperiorSpringReact11/blob/master/tela-do-sistema.png)
+
+## Instrutor e Aluno
+
+<table>
+  <tr>
+    <td><img alt="Nelio Alves" src="https://github.com/gpd38/gpd38/blob/main/img/user/nelioAlves.png" /><br>Nélio Alves</td>
+    <td><img alt="Gustavo Dias" src="https://github.com/gpd38/gpd38/blob/main/img/user/gustavo.jpg" /><br>Gustavo Dias</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.linkedin.com/in/nelio-alves/" target="_blank">Linkedin</a></td>
+    <td><a href="https://www.linkedin.com/in/gustavopereiradias/" target="_blank">Linkedin</a></td>
+    </tr>
+  </table>
+
+## Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
