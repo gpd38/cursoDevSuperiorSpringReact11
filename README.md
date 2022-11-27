@@ -418,7 +418,7 @@ git subtree push --prefix backend heroku main
 
 ## Tela do sistema
 
-![Sistema](https://raw.githubusercontent.com/cursoDevSuperiorSpringReact11/blob/master/tela-do-sistema.png)
+![Sistema](https://github.com/gpd38/cursoDevSuperiorSpringReact11/blob/master/tela-do-sistema.jpg)
 
 ## Instrutor e Aluno
 
