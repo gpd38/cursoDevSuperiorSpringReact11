@@ -424,8 +424,12 @@ git subtree push --prefix backend heroku main
 
 <table>
   <tr>
-    <td><img alt="Nelio Alves" src="https://github.com/gpd38/gpd38/blob/main/img/user/nelioAlves.png" /><br>Nélio Alves</td>
-    <td><img alt="Gustavo Dias" src="https://github.com/gpd38/gpd38/blob/main/img/user/gustavo.jpg" /><br>Gustavo Dias</td>
+    <td>
+    	<img alt="Nelio Alves" src="https://github.com/gpd38/gpd38/blob/main/img/user/nelioAlves.png" />
+    </td>
+    <td>
+    	<img alt="Gustavo Dias" src="https://github.com/gpd38/gpd38/blob/main/img/user/gustavo.jpg" />
+    </td>
   </tr>
   <tr>
     <td>Nélio Alves</td>
